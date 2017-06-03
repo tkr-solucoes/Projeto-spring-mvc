@@ -21,10 +21,15 @@
 
 			<div class="container-fluid">
 
+
+	<th:block th:include="fragments/MensagemSucesso"></th:block>
 			
 
 				<form method="POST" th:object="${cerveja}" class="form-vertical  js-form-loading">
-
+				
+				<th:block th:include="fragments/MensagensErroValidacoes"></th:block>
+				
+				
 				<div class="row">
 					<div class="col-sm-2">
 					
